@@ -53,6 +53,6 @@ PHP, CGI, Python and Perl scripts.
 
 Go to URL **127.0.0.1:1234/test.html**, it will show following page for testing each web scripts.
 
-<img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/images/http_server_test.png" width="300" height="450"/>
+<img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/images/http_server_test.png" width="400" height="500"/>
 
 
