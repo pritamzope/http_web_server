@@ -38,19 +38,19 @@ e.g.:
 
     $ ./httpserver /home/pritam/resource
 
-Some testing examples are given in **test** directory.
-Copy this whole folder into /home/pritam/resource directory.
-Now open Web Browser and goto address **127.0.0.1:1234**.
-Server uses port 1234 by default which can be changed in source(main.cpp).
+Some testing examples are given in **test** directory.<br>
+Copy the contents of **test** folder into /home/pritam/resource directory.<br>
+Now open Web Browser and goto address **127.0.0.1:1234**.<br>
+Server uses port 1234 by default which can be changed in source(main.cpp).<br>
 It will show following server default page.
 
 <img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/images/http_server_main_page.png" width="600" height="400"/>
 
 That means server is started successfully and ready to serve clients.
-Many clients are given in **test** directory such as static HTML pages, 
-PHP, CGI, Python and Perl scripts.
+Many clients are given in **test** directory such as static HTML pages,PHP, CGI, Python and Perl scripts.
 
-Go to URL **127.0.0.1:1234/test.html**, it will show following page for testing each web scripts.
+Navigate your browser URL to **127.0.0.1:1234/test.html**, it will show following page for testing each web scripts.<br>
+If server is running on another machine then use that machine's IP address.
 
 <img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/images/http_server_test.png" width="400" height="500"/>
 
