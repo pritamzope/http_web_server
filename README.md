@@ -50,7 +50,8 @@ That means server is started successfully and ready to serve clients.
 Many clients are given in **test** directory such as static HTML pages,PHP, CGI, Python and Perl scripts.
 
 Navigate your browser URL to **127.0.0.1:1234/test.html**, it will show following page for testing each web scripts.<br>
-If server is running on another machine then use that machine's IP address.
+If server is running on another machine then use that machine's IP address.<br>
+For running PHP, CGI, Python and Perl scripts on the server to get response, these applications must be installed there at first on server.
 
 <img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/images/http_server_test.png" width="400" height="500"/>
 
