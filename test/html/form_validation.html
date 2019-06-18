@@ -1,0 +1,213 @@
+<html>
+
+<title>Form validation</title>
+
+<script lang="javascript" type="text/javascript">
+
+function validateForm()
+{
+    if(document.myForm.firstName.value==""){
+        alert("First name is empty");
+        document.myForm.firstName.focus();
+        return false;
+    }
+
+    if(document.myForm.lastName.value==""){
+        alert("Last name is empty");
+        document.myForm.lastName.focus();
+        return false;
+    }
+
+
+    if(document.myForm.permanentAddress.value==""){
+        alert("Address is empty");
+        document.myForm.lastName.focus();
+        return false;
+    }
+
+
+    if(document.myForm.qualification.value==-1){
+        alert("Please select degree");
+        document.myForm.qualification.focus();
+        return false;
+    }
+
+    if(document.myForm.isSameAddress.checked==true){
+        document.myForm.currentAddress.value=document.myForm.permanentAddress.value;
+        return false;
+    }
+
+
+    if(document.myForm.permanentAddress.value==""){
+        alert("Address is empty");
+        document.myForm.lastName.focus();
+        return false;
+    }
+
+    if(document.myForm.gradPercentName.value==""){
+        alert("Percentage box is empty");
+        return false;
+    }else{
+        if(document.myForm.gradPercentName.value<60){
+            alert("Percentage is low 60");
+            return false;
+        }
+    }
+
+
+    document.write("<table border=2 bordercolor=#000077 cellspacing=8 cellpadding=5>"
+    +"<tr>"
+    +"<td>FirstName</td>"+"<td>"+document.myForm.firstName.value+"</td>"
+    +"<tr>"
+    +"<td>MiddleName</td>"+"<td>"+document.myForm.middleName.value+"</td>"
+    +"<tr>"
+    +"<td>LastName</td>"+"<td>"+document.myForm.firstName.value+"</td>"
+    +"<tr>"
+    +"<td>AddressName</td>"+"<td>"+document.myForm.permanentAddress.value+"</td>"
+    +"<tr>"
+    +"<td>Qualification</td>"+"<td>"+document.myForm.qualification.value+"</td>"
+    +"<tr>"
+    +"<td>Percentage</td>"+"<td>"+document.myForm.gradPercentName.value+"</td>"
+    +"<tr>"
+    +"<td>dateOfBirth</td>"+"<td>"+document.myForm.dateOfBirth.value+"</td>"
+    +"</tr>");
+}
+
+
+function copyAddress()
+{
+
+    if(document.myForm.isSameAddress.checked==true){
+        document.myForm.currentAddress.value=document.myForm.permanentAddress.value;
+        document.myForm.isSameAddress.checked=true;
+        return false;
+    }
+}
+
+
+</script>
+
+<style type="text/css">
+
+body{
+    background: #dddddd;
+    
+}
+
+h1{
+    font-family: monospace,Tahoma, sans-serif;
+    color: #1f4356;
+}
+
+h3{
+    color: #23c932;
+    float: left;
+}
+
+.textBox{
+    width: 200px;
+    height: 30px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+
+.textArea{
+    width: 350px;
+    height: 100px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.personalInfoMargin{
+        margin: 0px 5px 3px;
+        width: 80%;
+        height: 400px;
+        background-color: #efefef;
+}
+
+.qualifiedInfoMargin{
+        margin: 0px 5px 3px;
+        width: 80%;
+        height: 150px;
+        background-color: #efefef;
+}
+
+.submitButton{
+    width: 200px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #236623;
+}
+
+</style>
+
+
+<h1>Student Form Validation</h1>
+
+<center>
+
+<form name="myForm" onsubmit="return(validateForm());">
+
+<div class="personalInfoMargin">
+
+<h3>Personal Info:-</h3>
+</br></br>
+First Name : <input type="text" name="firstName" class="textBox"/>
+</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+Middle Name : <input type="text" name="middleName" class="textBox"/>
+</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Last Name : <input type="text" name="lastName" class="textBox"/>
+
+</br></br>
+
+Permanent Address : <textarea rows="6" cols="20" name="permanentAddress" class="textArea"></textarea>
+
+</br>
+
+Current Address :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="6" cols="20" name="currentAddress" class="textArea"></textarea>
+
+</br></br>
+
+<input type="checkbox" name="isSameAddress" onclick="return(copyAddress());">Permanent and Current Address is same ?</input>
+
+</div>
+</br>
+
+<div class="qualifiedInfoMargin">
+
+<h3>Qualification:-</h3>
+</br>
+
+<select name="qualification" class="textBox">
+<option value="-1" selected>[choose yours]</option>
+<option value="1">B.A</option>
+<option value="2">B.Com</option>
+<option value="3">B.Sc</option>
+</select>
+
+</br></br>
+
+Graduation Percentage : <input type="text" name="gradPercentName" class="textBox"/>
+</br>
+Date of Birth :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="dateOfBirth" class="textBox"/>
+
+
+</div>
+
+</br>
+</br>
+
+<center>
+<input type="submit" value="Submit" class="submitButton"/>
+</center>
+
+</form>
+
+</center>
+
+</html>
