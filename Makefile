@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=-std=c++11 -lboost_system -lboost_system -lboost_filesystem -lpthread
+CXXFLAGS=-std=c++11 -lboost_system -lboost_filesystem -lpthread
 OBJFILES=HttpService.o HttpAcceptor.o HttpServer.o main.o
 
 httpserver : ${OBJFILES}
