@@ -12,8 +12,8 @@ PHP, CGI, Python, Perl etc. scripts execution on server sides.
 
 ### Dependency
 
-  #### GCC with C++11 compiler(g++)<br>
-  #### Boost Library
+    #### GCC with C++11 compiler(g++)
+    #### Boost Library
 
 ### Step 1: Getting the Source Code
 
