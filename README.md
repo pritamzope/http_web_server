@@ -45,7 +45,7 @@ Now open Web Browser and goto address **127.0.0.1:1234**.
 Server uses port 1234 by default which can be changed in source(main.cpp).
 It will show following server default page.
 
-<img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/images/http_server_main_page.png" width="600" height="450"/>
+<img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/images/http_server_main_page.png" width="600" height="400"/>
 
 That means server is started successfully and ready to serve clients.
 Many clients are given in **test** directory such as static HTML pages, 
@@ -53,6 +53,6 @@ PHP, CGI, Python and Perl scripts.
 
 Go to URL **127.0.0.1:1234/test.html**, it will show following page for testing each web scripts.
 
-
+<img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/images/http_server_test.png" width="300" height="450"/>
 
 
