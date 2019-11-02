@@ -41,7 +41,7 @@ Run gen_openssl_key.sh script to generate HttpsWebServer.cert and HttpsWebServer
     
 following is the key generation example from my terminal:-
 
-    pritam@pzope:~/http_web_server-master$ sh gen_openssl_ley.sh 
+    pritam@pzope:~/http_web_server-master$ sh gen_openssl_key.sh 
     Can't load /home/pritam/.rnd into RNG
     140200119943616:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/home/pritam/.rnd
     Generating a RSA private key
