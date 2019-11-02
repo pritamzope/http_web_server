@@ -53,7 +53,7 @@ e.g.:
 Open browser and goto https://<ipaddress>:1234/. remebmer https not http.
 Browser must be allowed to accept requests from this server. For example, Firefox browser will show following Warning, so go to "Advanced" option and click on "Accept the Risk and Continue".
   
-<img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/https_web_server/images/allow_https_request.png"  width="600" height="400"/>
+<img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/https_web_server/images/allow_https_request.png"  width="700" height="500"/>
 
 Some testing examples are given in **test** directory.<br>
 Copy the contents of **test** folder into /home/pritam/resource directory.<br>
