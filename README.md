@@ -28,7 +28,7 @@ PHP, CGI, Python, Perl etc. scripts execution on server sides.
  
 ## HTTPS Web Server Main Page:- 
  
-<img src="https://raw.githubusercontent.com/pritamzope/https_web_server/master/https_web_server/images/https_server_main_page.png" width="600" height="400"/>
+<img src="https://raw.githubusercontent.com/pritamzope/http_web_server/master/https_web_server/images/https_web_server_main_page.png" width="600" height="400"/>
 
 
 
